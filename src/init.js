@@ -25,9 +25,11 @@ var game = new Phaser.Game(config);
 function preload() {
     this.load.image('food', '/assets/Food.png');
     this.load.image('body', '/assets/Food.png');
+    this.load.image('fondo', '/assets/back3.jpg');
 }
 
 function create() {
+    this.add.image(400, 300, 'fondo');
     var Food = new Phaser.Class({
 
         Extends: Phaser.GameObjects.Image,
